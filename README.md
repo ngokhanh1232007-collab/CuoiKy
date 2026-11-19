@@ -121,3 +121,4 @@ java -cp out -Dfile.encoding=UTF-8 main.Main
 6. **[6] Xem danh sách vé đã đặt:** Bảng tổng hợp tất cả vé, trạng thái thanh toán và doanh thu thực tế.
 7. **[0] Thoát chương trình.**
 "# OOPcuoiKy" 
+"# OOPcuoiKy" 
