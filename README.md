@@ -3,6 +3,7 @@
 > **Môn học:** Lập trình Hướng đối tượng (Java OOP)  
 > **Đề tài:** Nhóm 06 - Hệ thống quản lý mua vé xem phim cho sinh viên  
 > **Ngôn ngữ:** Java (Console Terminal Application)
+
 > **Tác giả:** Ngo Hoang Khanh, Nguyen Duy Khanh, Nguyen Quang Tu
 
 ---
