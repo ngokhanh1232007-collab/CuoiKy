@@ -1,8 +1,9 @@
-# 🎬 Hệ Thống Quản Lý Mua Vé Xem Phim Cho Sinh Viên (Nhóm 06)
+# Hệ Thống Quản Lý Mua Vé Xem Phim Cho Sinh Viên (Nhóm 06)
 
 > **Môn học:** Lập trình Hướng đối tượng (Java OOP)  
 > **Đề tài:** Nhóm 06 - Hệ thống quản lý mua vé xem phim cho sinh viên  
 > **Ngôn ngữ:** Java (Console Terminal Application)
+> **Tác giả:** Ngo Hoang Khanh, Nguyen Duy Khanh, Nguyen Quang Tu
 
 ---
 
@@ -63,7 +64,7 @@ OOPCuoiKyNew/
 
 ---
 
-## 🎯 4 Tính Chất OOP Được Thể Hiện Rõ Ràng
+##  4 Tính Chất OOP Được Thể Hiện Rõ Ràng
 
 | Tính chất OOP | Thể hiện trong Source Code |
 |---|---|
@@ -74,7 +75,7 @@ OOPCuoiKyNew/
 
 ---
 
-## 💼 Các Quy Tắc Nghiệp Vụ (Business Rules)
+##  Các Quy Tắc Nghiệp Vụ (Business Rules)
 
 1. **Phim ngừng chiếu:** Ném `BookingException` khi đặt vé cho phim có trạng thái `STOPPED`.
 2. **Suất chiếu:** Kiểm tra suất chiếu tồn tại trước khi cho phép đặt vé.
@@ -84,35 +85,9 @@ OOPCuoiKyNew/
 6. **Cập nhật trạng thái:** Khi đặt vé thành công, ghế chuyển thành `BOOKED` và lưu vào file. Khi thanh toán thành công, vé chuyển thành `PAID` và lưu vào file.
 7. **Thanh toán:** Không cho phép thanh toán vé đã thanh toán trước đó.
 
----
 
-## 🚀 Hướng Dẫn Biên Dịch & Chạy Chương Trình
 
-### Yêu cầu môi trường
-- Máy đã cài **Java JDK** (phiên bản 11, 17, 21 trở lên).
-
-### Cách 1: Chạy file `build.bat` (Khuyên dùng trên Windows)
-Chỉ cần nhấp đúp chuột vào file `build.bat` hoặc mở terminal gõ:
-```cmd
-cd d:\OOPCuoiKyNew
-build.bat
-```
-Script sẽ tự động biên dịch toàn bộ mã nguồn vào thư mục `out/`, thông báo kết quả và khởi chạy chương trình.
-
-### Cách 2: Biên dịch và chạy bằng lệnh CMD thủ công
-```cmd
-cd d:\OOPCuoiKyNew
-
-REM 1. Biên dịch toàn bộ file java
-javac -encoding UTF-8 -d out src\model\*.java src\utils\*.java src\service\*.java src\repository\*.java src\main\Main.java
-
-REM 2. Chạy chương trình
-java -cp out -Dfile.encoding=UTF-8 main.Main
-```
-
----
-
-## 📋 Danh Sách Chức Năng Menu Console
+##  Danh Sách Chức Năng Menu Console
 1. **[1] Xem / Tìm kiếm phim:** Xem danh sách phim đang chiếu, toàn bộ phim hoặc tìm kiếm theo tên.
 2. **[2] Xem suất chiếu & sơ đồ ghế:** Xem danh sách suất chiếu, lọc theo phim và hiển thị sơ đồ ghế ma trận trực quan (`[ ]` ghế trống, `[X]` đã đặt, kèm ký hiệu Thường `N`, VIP `V`, Đôi `C`).
 3. **[3] Quản lý khách hàng:** Xem danh sách khách hàng và thêm khách hàng mới (tự động sinh mã `KH00x`, kiểm tra trùng số điện thoại).
